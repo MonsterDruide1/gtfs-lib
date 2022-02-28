@@ -24,6 +24,7 @@ public class Service implements Serializable {
     public Calendar calendar;
     public Map<LocalDate, CalendarDate> calendar_dates = Maps.newHashMap();
 
+    public Service(){}
     public Service(String service_id) {
         this.service_id = service_id;
     }

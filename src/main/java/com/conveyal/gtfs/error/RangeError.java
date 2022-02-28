@@ -8,6 +8,8 @@ public class RangeError extends GTFSError implements Serializable {
 
     final double min, max, actual;
 
+    public RangeError() {super(null);}
+
     public RangeError(String file, long line, String field, double min, double max, double actual) {
         super(file, line, field);
         this.min = min;
